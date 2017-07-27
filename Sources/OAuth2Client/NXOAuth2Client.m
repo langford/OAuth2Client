@@ -351,7 +351,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                        @"client_credentials", @"grant_type",
                                        clientId, @"client_id",
-                                       clientSecret, @"client_secret",
+                                       //clientSecret, @"client_secret",
                                        nil];
     if (self.desiredScope) {
         [parameters setObject:[[self.desiredScope allObjects] componentsJoinedByString:@" "] forKey:@"scope"];
@@ -384,7 +384,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                        @"password", @"grant_type",
                                        clientId, @"client_id",
-                                       clientSecret, @"client_secret",
+                                      // clientSecret, @"client_secret",
                                        username, @"username",
                                        password, @"password",
                                        nil];
@@ -425,7 +425,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                        @"assertion", @"grant_type",
                                        clientId, @"client_id",
-                                       clientSecret, @"client_secret",
+                                      // clientSecret, @"client_secret",
                                        anAssertionType.absoluteString, @"assertion_type",
                                        anAssertion, @"assertion",
                                        nil];
@@ -461,7 +461,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
         NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                            @"refresh_token", @"grant_type",
                                            clientId, @"client_id",
-                                           clientSecret, @"client_secret",
+                                          // clientSecret, @"client_secret",
                                            accessToken.refreshToken, @"refresh_token",
                                            nil];
         
