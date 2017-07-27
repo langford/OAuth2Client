@@ -311,7 +311,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                        @"authorization_code", @"grant_type",
                                        clientId, @"client_id",
-                                       clientSecret, @"client_secret",
+                                       //clientSecret, @"client_secret",
                                        [redirectURL absoluteString], @"redirect_uri",
                                        authGrant, @"code",
                                        nil];
