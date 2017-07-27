@@ -314,6 +314,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
                                        //clientSecret, @"client_secret",
                                        [redirectURL absoluteString], @"redirect_uri",
                                        authGrant, @"code",
+                                       @"371361e4-b9e2-4a3f-8315-2a301a3b0a3d",@"resource",
                                        nil];
     if (self.desiredScope) {
         [parameters setObject:[[self.desiredScope allObjects] componentsJoinedByString:@" "] forKey:@"scope"];
